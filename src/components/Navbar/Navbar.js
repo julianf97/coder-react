@@ -2,9 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
-import {faCartShopping} from '@fortawesome/free-solid-svg-icons';
-import {faUser} from '@fortawesome/free-solid-svg-icons';
 import { NavbarNav } from "./Navbar_nav";
+import { CartWidget } from "./CartWidget";
 import "./header.scss"
 
 export const Navbar = () => {
@@ -48,14 +47,7 @@ export const Navbar = () => {
                         <h4 className="titulo__wsp">Whatsapp</h4>
                         <h2 className="numero__wsp">+5493517719671</h2>
                     </div>
-                    <div className="contenedor-user-cart">
-                        <div className="contenedor-cart">
-                            <FontAwesomeIcon className="carrito" icon={faCartShopping}/>
-                        </div>
-                        <div className="contenedor-cart">
-                            <FontAwesomeIcon className="carrito" icon={faUser}/>
-                        </div>
-                    </div>
+                    <CartWidget/>
                 </div>
             </div>
         </header>
